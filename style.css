@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  height: auto;
+}
+.hed-profile {
+  width: 100%;
+  height: 500px;
+  padding: 30px;
+  border: 3px solid black;
+  border-bottom: none;
+  background-color: rgb(63, 63, 235);
+}
+.profile-container {
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid blue;
+  overflow: hidden;
+}
+.profile-name-section {
+  width: 75%;
+  height: 100%;
+  border: 4px solid blue;
+  background-color: rgb(161, 235, 245);
+  transform: skewX(45deg);
+  margin-left: -230px;
+  padding-left: 27%;
+}
+.profile-photo-container {
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  left: 20%;
+  top: 10%;
+  border: 4px solid blue;
+  background-color: rgb(161, 235, 245);
+}
+.profile-photo-container::before {
+  position: absolute;
+  right: -150px;
+  bottom: -8px;
+  content: " ";
+  width: 300px;
+  height: 300px;
+  border: 4px solid blue;
+  background: url("images/hasan.jpg") center;
+  background-size: contain;
+  border-radius: 50%;
+}
+.profile-text {
+  transform: skewX(-45deg);
+  margin-top: 70px;
+}
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  color: red;
+}
+#so {
+  border-bottom: 1px solid black;
+  font-size: 25px;
+}
+.pera {
+  font-size: 15px;
+}
+.second-section {
+  width: 100%;
+  height: auto;
+  background-color: rgb(19, 51, 192);
+  display: flex;
+  padding: 0px 15px 30px 15px;
+  border: 3px solid black;
+  border-top: none;
+}
+.child {
+  height: auto;
+  /* border: 1px solid green; */
+}
+.child.a {
+  width: 60%;
+}
+.child.b {
+  width: 40%;
+}
+.left-exprience {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 20px 10px;
+}
+.hed {
+  font-size: 40px;
+  color: rgb(231, 32, 171);
+  font-style: italic;
+  font-weight: 700;
+}
+.title {
+  font-size: 27px;
+  color: rgb(102, 102, 213);
+}
+#sto {
+  font-size: 32px;
+  color: brown;
+}
+.left-education {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 20px 10px;
+}
+.degri {
+  font-size: 25px;
+  color: blueviolet;
+}
+.left-Skill {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 29px 10px;
+}
+.pera .a {
+  font-size: 24px;
+}
+progress {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 10px;
+}
+progress[vllue]::-webkit-progress-bar {
+  background-color: rgb(219, 219, 248);
+  border-radius: 20px;
+}
+progress::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, rgb(42, 107, 228), rgb(25, 216, 159));
+  border-radius: 2px;
+  background-size: 33px 20px, 100% 100%, 100% 100%;
+}
+.value {
+  font-size: 24px;
+}
+.hed1 {
+  font-size: 30px;
+  color: azure;
+}
+.right {
+  padding: 20px 10px 18px 10px;
+  background: rgba(2, 2, 22, 0.6);
+}
+.head {
+  font-size: 40px;
+  color: chartreuse;
+}
+#tex {
+  font-size: 25px;
+  color: aqua;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+#text {
+  font-size: 17px;
+  color: white;
+}
+.tex {
+  color: white;
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+  .profile-photo-container {
+    width: 60%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+
+  .hed-profile {
+    height: 100vh;
+    padding: 0px 10px 0px 10px;
+  }
+  .profile-name-section{
+    width: 100%;
+    height: 50%;
+    transform: skew(0,-20deg);
+    margin-left: 0px;
+    margin-top: -45%;
+    padding-left: 0px;
+    padding-top: 45%;
+  }
+  .profile-text{
+    transform: skew(0,20deg);
+    margin-top: 70px;
+    margin-left: 13px;
+  }
+  .name{
+    font-size: 30px;
+  }
+  .pera{
+    font-size: 17px;
+
+  }
+  .profile-photo-container{
+    width: 250px;
+    height: 50%;
+  top: -125px;
+        left: 350px;
+  }
+  .profile-photo-container::before{
+    width: 250px;
+    height: 250px;
+   bottom: -125px;
+   left: -8px;
+  }
+}
